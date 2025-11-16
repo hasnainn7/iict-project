@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="theme-toggle">
+    <header class="my-header">
+        <div class="logo-div">
+            <img class="logo" src="kela.png" alt="">
+            <p>Community Hub</p>
+        </div>
+        <div class="nav-bar">
+            <a href="home.html">Home</a>
+            <a id="selected-button" href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="discovery.html">Directory</a>
+            <a href="resources.html">Resources</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+        <div class="theme-change">
+            <label for="theme-toggle" class="theme-toggle-label">
+                <img src="brightness-and-contrast.png" alt="Theme Toggle">
+            </label>
+        </div>
+    </header>
+
+    
+    <br><br><br><br>
+
+    <main>
+        <div class="page-header">
+            <h1>Community News</h1>
+            <p>Stay informed about the latest updates, announcements, and happenings in our community.</p>
+        </div>
+
+        <div class="featured-image">
+            <img src="featured-news.jpeg" alt="Featured News">
+            <div class="featured-text">
+                <span class="label featured">Featured</span>
+                <h2>Community Highlights</h2>
+                <p>Celebrating our vibrant community together</p>
+            </div>
+        </div>
+
+        <section class="news-cards">
+            <div class="card">
+                <input type="checkbox" id="card-1" class="card-toggle">
+                <label for="card-1" class="card-header">
+                    <div class="card-header-content">
+                        <span class="label announcement">Announcement</span>
+                        <span class="date">November 5, 2025</span>
+                        <h3>New Community Garden Opening Next Month</h3>
+                        <p class="card-preview">We're excited to announce the opening of our new community garden space.</p>
+                    </div>
+                    <div class="chevron">▼</div>
+                </label>
+                <div class="card-expanded-content">
+                    <p>We're excited to announce the opening of our new community garden space at 456 Park Avenue. This initiative aims to bring neighbors together and provide fresh produce to local families.</p>
+                    <p>The garden will feature over 50 raised beds available for rent, composting areas, and educational workshops on sustainable gardening practices. Registration opens December 1st.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="card-2" class="card-toggle">
+                <label for="card-2" class="card-header">
+                    <div class="card-header-content">
+                        <span class="label update">Update</span>
+                        <span class="date">November 3, 2025</span>
+                        <h3>Road Closure: Main Street Construction Update</h3>
+                        <p class="card-preview">Main Street between 1st and 3rd Avenue will be closed for repairs.</p>
+                    </div>
+                    <div class="chevron">▼</div>
+                </label>
+                <div class="card-expanded-content">
+                    <p>The construction work is scheduled to begin Monday, November 10th and will continue for approximately 3 weeks. The closure is necessary to repair aging water infrastructure and repave the road surface.</p>
+                    <p>Detour signs will be posted, and local businesses will remain accessible via side streets. We appreciate your patience during this important infrastructure upgrade that will benefit the community for years to come.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="card-3" class="card-toggle">
+                <label for="card-3" class="card-header">
+                    <div class="card-header-content">
+                        <span class="label community">Community</span>
+                        <span class="date">November 1, 2025</span>
+                        <h3>Winter Festival Planning Committee Seeks Volunteers</h3>
+                        <p class="card-preview">Help us make this year's Winter Festival the best one yet!</p>
+                    </div>
+                    <div class="chevron">▼</div>
+                </label>
+                <div class="card-expanded-content">
+                    <p>Our annual Winter Festival is scheduled for December 15th, and we need enthusiastic volunteers to help with planning and execution. Whether you can spare a few hours or want to join a committee, we'd love your help!</p>
+                    <p>Volunteer opportunities include event setup, activity coordination, food service, and cleanup. Interested? Contact our volunteer coordinator at volunteers@communityhub.org or call (555) 123-4567.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="card-4" class="card-toggle">
+                <label for="card-4" class="card-header">
+                    <div class="card-header-content">
+                        <span class="label announcement">Announcement</span>
+                        <span class="date">October 30, 2025</span>
+                        <h3>Local Library Expands Digital Resources</h3>
+                        <p class="card-preview">Access thousands of e-books and audiobooks with your library card.</p>
+                    </div>
+                    <div class="chevron">▼</div>
+                </label>
+                <div class="card-expanded-content">
+                    <p>The local library has partnered with multiple digital platforms to offer an expanded collection of over 15,000 e-books, audiobooks, and digital magazines. All content is free with your library card.</p>
+                    <p>New users can download the library app or visit the website to get started. The library also offers tech help sessions every Tuesday and Thursday from 2-4 PM for those new to digital lending.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input type="checkbox" id="card-5" class="card-toggle">
+                <label for="card-5" class="card-header">
+                    <div class="card-header-content">
+                        <span class="label event">Event</span>
+                        <span class="date">October 28, 2025</span>
+                        <h3>Community Safety Town Hall This Thursday</h3>
+                        <p class="card-preview">Join us for an important discussion about neighborhood safety initiatives.</p>
+                    </div>
+                    <div class="chevron">▼</div>
+                </label>
+                <div class="card-expanded-content">
+                    <p>Join us this Thursday, November 20th at 7 PM in the Community Center for a town hall focused on neighborhood safety. Local police, fire department representatives, and city officials will be present to discuss recent initiatives and answer your questions.</p>
+                    <p>Topics include the new neighborhood watch program, emergency preparedness, traffic safety improvements, and community policing efforts. Light refreshments will be provided.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="brand-header">
+                    <div class="brand-logo"><img src="kela.png" alt=""></div>
+                    <span class="brand-name">Community Hub</span>
+                </div>
+                <p class="brand-tagline">
+                    Connecting neighbors, supporting local businesses, and building a stronger community together.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="discovery.html">Business Directory</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul class="footer-links">
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="home.html">About Us</a></li>
+                    <li><a href="home.html">Volunteer</a></li>
+                    <li><a href="home.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <div class="contact-info">
+                    <p>123 Community Way</p>
+                    <p>Islamabad, FAST-NUCES</p>
+                    <p>(555) 123-4567</p>
+                    <p>info@communityhub.org</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Community Hub. All rights reserved. Made with Love for our community.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

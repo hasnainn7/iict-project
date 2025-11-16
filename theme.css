@@ -1,0 +1,93 @@
+/* Theme System - Pure CSS Light/Dark Mode Toggle */
+
+/* Dark Theme (Default) */
+:root {
+    --bg-primary: #1f2937;
+    --bg-secondary: #374151;
+    --bg-tertiary: #4b5563;
+    --bg-header: #293344;
+    --bg-footer: #374151;
+    --bg-card: #334155;
+    
+    --text-primary: #fafaf9;
+    --text-secondary: #e5e7eb;
+    --text-muted: #d1d5db;
+    --text-dark: #000000;
+    
+    --accent-primary: #14b8a6;
+    --accent-hover: #0d9488;
+    --accent-secondary: #34d399;
+    
+    --border-color: #4b5563;
+    --overlay-opacity: 0.95;
+    
+    --gradient-start: #4b5563;
+    --gradient-mid: #374151;
+    --gradient-end: #1f2937;
+}
+
+/* Light Theme */
+body:has(#theme-toggle:checked) {
+    --bg-primary: #f3f4f6;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e5e7eb;
+    --bg-header: #ffffff;
+    --bg-footer: #f9fafb;
+    --bg-card: #ffffff;
+    
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+    --text-dark: #000000;
+    
+    --accent-primary: #14b8a6;
+    --accent-hover: #0d9488;
+    --accent-secondary: #10b981;
+    
+    --border-color: #d1d5db;
+    --overlay-opacity: 1;
+    
+    --gradient-start: #e5e7eb;
+    --gradient-mid: #f3f4f6;
+    --gradient-end: #ffffff;
+}
+
+/* Hide the checkbox */
+#theme-toggle {
+    display: none;
+}
+
+/* Theme toggle button styles */
+.theme-toggle-label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle-label:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle-label img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Rotate icon when theme changes */
+body:has(#theme-toggle:checked) .theme-toggle-label img {
+    transform: rotate(180deg);
+}
+
+/* Apply theme to body */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

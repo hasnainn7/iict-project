@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="checkbox" id="theme-toggle">
+    <header class="my-header">
+        <div class="logo-div">
+            <img class="logo" src="kela.png" alt="">
+            <p>Community Hub</p>
+        </div>
+        <div class="nav-bar">
+            <a href="home.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="events.html">Events</a>
+            <a href="discovery.html">Directory</a>
+            <a id="selected-button" href="resources.html">Resources</a>
+            <a href="contacts.html">Contact</a>
+        </div>
+        <div class="theme-change">
+            <label for="theme-toggle" class="theme-toggle-label">
+                <img src="brightness-and-contrast.png" alt="Theme Toggle">
+            </label>
+        </div>
+    </header>
+
+
+    <main>
+        <br><br><br><br>
+        <div class="header" style="padding-bottom: 1.2rem;">
+            <h1 style="padding-bottom: 1.25rem;">
+                <center>Resource Center</center>
+            </h1>
+            <p>
+                <center>Find essential services, contact information, and helpful resources for our community.</center><center>
+
+                    We're
+                    here to help
+                    connect you with what you need.</center>
+            </p>
+            <br>
+        </div>
+        
+        <input type="radio" name="tab" id="tab-emergency" class="tab-input" checked>
+        <input type="radio" name="tab" id="tab-education" class="tab-input">
+        <input type="radio" name="tab" id="tab-health" class="tab-input">
+        <input type="radio" name="tab" id="tab-government" class="tab-input">
+        
+        <nav class="categories">
+            <label for="tab-emergency" class="tab-button">Emergency</label>
+            <label for="tab-education" class="tab-button">Education</label>
+            <label for="tab-health" class="tab-button">Health</label>
+            <label for="tab-government" class="tab-button">Government</label>
+        </nav>
+        
+        <!-- Emergency Tab Content -->
+        <section class="resources tab-content" id="content-emergency">
+            <div class="card">
+                <div class="icon">🚨</div>
+                <div class="card-content">
+                    <h2>Emergency Services</h2>
+                    <p>24/7 emergency response and assistance</p>
+                    <p>📞 911 | 🌐 <a href="#">emergency.gov</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🚑</div>
+                <div class="card-content">
+                    <h2>Ambulance Service</h2>
+                    <p>Immediate medical transportation</p>
+                    <p>📞 (555) 911-0000</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🚒</div>
+                <div class="card-content">
+                    <h2>Fire Department</h2>
+                    <p>Fire emergency and prevention services</p>
+                    <p>📞 (555) 911-0100</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">👮</div>
+                <div class="card-content">
+                    <h2>Police Department</h2>
+                    <p>Law enforcement and public safety</p>
+                    <p>📞 (555) 911-0200</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">☎️</div>
+                <div class="card-content">
+                    <h2>Crisis Hotline</h2>
+                    <p>Mental health crisis support 24/7</p>
+                    <p>📞 (555) 273-8255 | 🌐 <a href="#">crisishotline.org</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Tab Content -->
+        <section class="resources tab-content" id="content-education">
+            <div class="card">
+                <div class="icon">🎓</div>
+                <div class="card-content">
+                    <h2>Community College</h2>
+                    <p>Affordable higher education and vocational training</p>
+                    <p>📞 (555) 234-5000 | 🌐 <a href="#">communitycollege.edu</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">📚</div>
+                <div class="card-content">
+                    <h2>Public Library</h2>
+                    <p>Free books, internet access, and learning programs</p>
+                    <p>📞 (555) 234-5100 | 🌐 <a href="#">publiclibrary.org</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">👶</div>
+                <div class="card-content">
+                    <h2>Early Childhood Education</h2>
+                    <p>Preschool and daycare programs</p>
+                    <p>📞 (555) 234-5200</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">💻</div>
+                <div class="card-content">
+                    <h2>Adult Learning Center</h2>
+                    <p>GED preparation and skills training</p>
+                    <p>📞 (555) 234-5300 | 🌐 <a href="#">adultlearning.org</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <div class="card-content">
+                    <h2>After School Programs</h2>
+                    <p>Educational activities for school-age children</p>
+                    <p>📞 (555) 234-5400</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Health Tab Content -->
+        <section class="resources tab-content" id="content-health">
+            <div class="card">
+                <div class="icon">🏥</div>
+                <div class="card-content">
+                    <h2>Community Health Clinic</h2>
+                    <p>Affordable primary care and preventive services</p>
+                    <p>📞 (555) 345-6000 | 🌐 <a href="#">communityhealthclinic.org</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">💉</div>
+                <div class="card-content">
+                    <h2>Free Health Screenings</h2>
+                    <p>Monthly blood pressure, diabetes, and wellness checks</p>
+                    <p>📞 (555) 345-6100</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🧠</div>
+                <div class="card-content">
+                    <h2>Mental Health Services</h2>
+                    <p>Counseling and therapy with sliding scale fees</p>
+                    <p>📞 (555) 345-6200 | 🌐 <a href="#">mentalhealthservices.org</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🦷</div>
+                <div class="card-content">
+                    <h2>Dental Care Program</h2>
+                    <p>Low-cost dental services for families</p>
+                    <p>📞 (555) 345-6300</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">💊</div>
+                <div class="card-content">
+                    <h2>Prescription Assistance</h2>
+                    <p>Help with medication costs and generic alternatives</p>
+                    <p>📞 (555) 345-6400 | 🌐 <a href="#">rxhelp.org</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Government Tab Content -->
+        <section class="resources tab-content" id="content-government">
+            <div class="card">
+                <div class="icon">🏛️</div>
+                <div class="card-content">
+                    <h2>City Hall</h2>
+                    <p>Municipal services and permits</p>
+                    <p>📞 (555) 456-7000 | 🌐 <a href="#">cityhall.gov</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">📋</div>
+                <div class="card-content">
+                    <h2>Social Services</h2>
+                    <p>Food assistance, housing support, and welfare programs</p>
+                    <p>📞 (555) 456-7100</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">🚗</div>
+                <div class="card-content">
+                    <h2>DMV Office</h2>
+                    <p>Driver's licenses and vehicle registration</p>
+                    <p>📞 (555) 456-7200 | 🌐 <a href="#">dmv.gov</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">💰</div>
+                <div class="card-content">
+                    <h2>Tax Assistance</h2>
+                    <p>Free tax preparation for low-income residents</p>
+                    <p>📞 (555) 456-7300</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">📄</div>
+                <div class="card-content">
+                    <h2>Legal Aid Services</h2>
+                    <p>Free legal consultation and representation</p>
+                    <p>📞 (555) 456-7400 | 🌐 <a href="#">legalaid.org</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <p>Can't find what you're looking for?</p>
+            <p>Contact our community support team and we'll help connect you with the right resources.</p>
+            <div class="contact-info">
+                <span>📞 (555) 123-4567</span>
+                <span>✉️ help@communityhub.org</span>
+            </div>
+        </section>
+    </main>
+    <br><br><br><br>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="brand-header">
+                    <div class="brand-logo"><img src="kela.png" alt=""></div>
+                    <span class="brand-name">Community Hub</span>
+                </div>
+                <p class="brand-tagline">
+                    Connecting neighbors, supporting local businesses, and building a stronger community together.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="discovery.html">Business Directory</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul class="footer-links">
+                    <li><a href="news.html">Latest News</a></li>
+                    <li><a href="home.html">About Us</a></li>
+                    <li><a href="home.html">Volunteer</a></li>
+                    <li><a href="home.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <div class="contact-info">
+                    <p>123 Community Way</p>
+                    <p>Islamabad, FAST-NUCES</p>
+                    <p>(555) 123-4567</p>
+                    <p>info@communityhub.org</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Community Hub. All rights reserved. Made with Love for our community.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

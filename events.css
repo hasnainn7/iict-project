@@ -11,59 +11,6 @@ a {
     text-decoration: none;
 }
 
-.my-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fafaf9;
-    background-color: #293344;
-    opacity: 0.9;
-    position: sticky;
-    top: 0;
-    
-}
-
-.logo-div {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding-left: 3rem;
-}
-
-.logo {
-    width: 40px;
-    height: 40px;
-    border-radius: 17px;
-    margin-top: 14px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-bar>a {
-    border-radius: 10px;
-    border: #293344;
-    background-color: #293344;
-    color: white;
-    padding: 10px 20px;
-    font-size: medium;
-    transition: all .2s ease;
-    margin-right: 5px;
-}
-
-.nav-bar>a:hover {
-    background-color: #4a5568;
-    cursor: pointer;
-}
-
-#selected-button {
-    background-color: #14b8a6;
-    color: black;
-}
 
 .theme-change {
     padding-right: 3rem;
@@ -82,18 +29,6 @@ a {
 }
 
 
-
-
-
-.header{
-    border: 2px solid transparent;
-    display: flex;
-    justify-content: space-evenly;
-   
-    margin: auto;
-     background-color: #293344;
-     height: 70px;
-}
 .left{
     border: 2px solid transparent;
     display:flex;
@@ -101,20 +36,11 @@ a {
     align-items: center;
 
 }
-.logo{
-    border-radius: 28px;
-    border: 2px solid transparent ;
-   padding: 17px 20px 17px 20px;
-    text-align: center;
-    background-image: linear-gradient(to bottom right, rgb(13, 150, 127) ,rgb(159, 94, 181));
-    font-size: 15px;
-    color: white;
-   
-}
+
 .brand-name{
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: var(--text-primary);
 }
 .center{
     border: 2px solid transparent;
@@ -130,26 +56,26 @@ a {
     font-size: 18px;
     border-radius: 15px;
      padding: 7px 10px 7px 10px;
-     color: rgb(255, 255, 255);
+     color: var(--text-primary);
      transition: all 0.5s linear;
 }
 .link:hover{
-    background-color: #4a5568;
+    background-color: var(--bg-tertiary);
 
 }
 .link1{
-    background-color: #14b8a6;
-    color: white;
+    background-color: var(--accent-primary);
+    color: var(--text-dark);
 }
 .link1:hover{
-    background-color: #14b8a6;
-    color: white;
+    background-color: var(--accent-hover);
+    color: var(--text-dark);
 }
 .link2{
-     background-color: #4a5568;
+     background-color: var(--bg-tertiary);
 }
 .link2:hover{
-     background-color: #3f4b5f;
+     background-color: var(--bg-secondary);
 }
 .right{
     display:flex;
@@ -168,7 +94,8 @@ a {
 {
     border: 2px solid transparent;
     width: 100%;
-    background-color: #182336;
+    background-color: var(--bg-primary);
+
 }
 .top
 {
@@ -187,7 +114,7 @@ a {
     border: 2px solid transparent;
     font-size: 30px;
     font-weight: 700;
-    color: white;
+    color: var(--text-primary);
     position: relative;
     top: 10px;
     
@@ -197,7 +124,7 @@ a {
     width: 650px;
     text-align: center;
     border: 2px solid transparent;
-    color: rgb(174, 174, 174);
+    color: var(--text-secondary);
     font-size: 15px;
     word-spacing: 2px;
     font-weight: 500;
@@ -207,7 +134,7 @@ a {
 .bar
 {   
     display: flex;
-    color: white;
+    color: var(--text-primary);
     border: 2px solid transparent;
     width: 400px;
     justify-content: space-between;
@@ -216,11 +143,10 @@ a {
     letter-spacing: 1px;
 }
 .one{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    text-align: center;
 }
 .workshop
 {
@@ -253,45 +179,79 @@ a {
     border: 2px solid transparent;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 30px;
-    justify-items: center;
-     background-color: #182336;
-   /* margin-top: 100px; */
-   padding-bottom: 100px;
-   padding-top: 100px;
-
-  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: var(--bg-primary);
+    padding: 100px 3%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
+
 .box{
-    border:2px solid transparent;
-    height: 50vh;
-    width: 90%;
-    background-color: rgb(61, 61, 84);
+    border: 2px solid transparent;
+    min-height: 350px;
+    width: 100%;
+    background-color: var(--bg-secondary);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-align-items: center;
-justify-content: center;
-transition: all 0.5s linear;
-   
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
+@media (max-width: 1200px) {
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 80px 3%;
+        gap: 25px;
+    }
+}
 
+@media (max-width: 768px) {
+    .boxes {
+        grid-template-columns: 1fr;
+        padding: 60px 5%;
+        gap: 20px;
+    }
+    
+    .box {
+        min-height: 380px;
+    }
+    
+    .paragraph {
+        width: 90%;
+        max-width: 100%;
+    }
+    
+    .bar {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    .top {
+        height: auto;
+        padding: 30px 20px;
+    }
 }
 
  .box:hover{
       transform: scale(1.05);
  }
 .color{
-border: 2px solid transparent;
-height: 14px;
-border-top-right-radius: 25px;
-border-top-left-radius: 25px;
- background-color: blue;
-width: 100%;
-position: relative;
-bottom: 55px;
-
+    border: 2px solid transparent;
+    height: 8px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    background-color: blue;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .line1{
      background-color: rgb(12, 168, 12);
@@ -316,45 +276,41 @@ bottom: 55px;
 }
 .content{
     border: 2px solid transparent;
-    height: 65%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-
+    gap: 12px;
 }
 .ws1{
-    border: 2px solid  transparent;
+    border: 2px solid transparent;
     color: white;
-     padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
-    width: 72px;
+    padding: 5px 12px;
+    border-radius: 15px;
     background-color: blue;
-    gap: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
 }
 .sp1{
-      width: 50px;
+      width: fit-content;
       background-color: rgb(12, 168, 12);
 }
 .fes1{
-    width: 57px;
+    width: fit-content;
     background-color: rgb(255, 38, 0);
 }
 .com1{
-    width: 80px;
+    width: fit-content;
     background-color: purple;
 }
 .art1{
-    width: 30px;
-       background-color: rgb(241, 144, 160);
+    width: fit-content;
+    background-color: rgb(241, 144, 160);
 }
 .heading{
      border: 2px solid transparent;
-    color: white;
+    color: var(--text-primary);
     font-size: 20px;
     padding-top: 10px;
 }
@@ -370,7 +326,7 @@ bottom: 55px;
 
 .tareehk{
 border: 2px solid transparent;
-color: white;
+color: var(--text-primary);
 font-size: 15px;
 word-spacing: 1px;
 
@@ -387,7 +343,7 @@ word-spacing: 1px;
 
 .clock{
 border: 2px solid transparent;
-color: white;
+color: var(--text-primary);
 font-size: 15px;
 }
 
@@ -401,18 +357,31 @@ font-size: 15px;
 
 .place{
 border: 2px solid transparent;
-color: white;
+color: var(--text-primary);
 font-size: 15px;
 }
 .para{
     border: 2px solid transparent;
-    color: white;
+    color: var(--text-primary);
     font-size: 15px;
     padding-top: 10px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease;
+}
+
+.box:hover .para {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    overflow: visible;
 }
 .btn{
-   position: relative;
-   top:19px;
+   margin-top: 10px;
 }
 .btn-name{
     border: 2px solid transparent;
@@ -431,10 +400,15 @@ font-size: 15px;
 
 .icon
 {
-    color: transparent;
+    display: inline-flex;
+    align-items: center;
 }
-.icon:hover{
-    color: rgb(55, 228, 156);
+.icon img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.icon:hover img {
+    opacity: 1;
 }
 .arrow{
 border: 2px solid gray;
@@ -442,12 +416,17 @@ color: white;
 }
 .img7
 {
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(71%) sepia(8%) saturate(454%) hue-rotate(169deg) brightness(92%) contrast(88%);
+}
+
+body:has(#theme-toggle:checked) .img7 {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(8%) saturate(1006%) hue-rotate(169deg) brightness(95%) contrast(91%);
 }
 .footer{
     border: 2px solid transparent;
-      background-color: #374151;
+      background-color: var(--bg-footer);
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -465,14 +444,14 @@ color: white;
 }
 
 .foot2{
-    border-bottom: 1px solid #4b5563;
+    border-bottom: 1px solid var(--border-color);
     width: 80%;
       position: relative;
     top:35px;
 }
 .foot3{
     font-size: 15px;
-   color: #d1d5db; 
+   color: var(--text-muted); 
     position: relative;
     top:27px;
 }
@@ -490,17 +469,17 @@ color: white;
     text-align: center;
     background-image: linear-gradient(to bottom right, rgb(13, 150, 127) ,rgb(159, 94, 181));
     font-size: 15px;
-      color: #d1d5db; 
+      color: var(--text-muted); 
    
 }
 .f-brand-name{
     font-size: 20px;
     font-weight: bold;
-      color: #d1d5db; 
+      color: var(--text-primary); 
 }
 .f-two{
     border: 2px solid transparent;
-     color: #d1d5db; 
+     color: var(--text-muted); 
     width: 400px;
     position: relative;
     top:20px;
@@ -509,7 +488,7 @@ color: white;
 .f-heading{
     font-size: 20px;
     font-weight: bold;
-      color: #d1d5db; 
+      color: var(--text-primary); 
 }
 .f-links{
     display: flex;
@@ -524,7 +503,7 @@ color: white;
       text-decoration: none;
     font-size: 16px;
     
-  color: #d1d5db; 
+  color: var(--text-muted); 
 }
 .f1{
     border: 2px solid transparent;

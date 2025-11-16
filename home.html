@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="home.css">
     <title>Community Hub</title>
 </head>
 
 <body>
+    <input type="checkbox" id="theme-toggle">
     <header class="my-header">
         <div class="logo-div">
             <img class="logo" src="kela.png" alt="">
@@ -16,16 +18,16 @@
         </div>
         <div class="nav-bar">
             <a id="selected-button" href="home.html">Home</a>
-            <a href="news_final.html">News</a>
+            <a href="news.html">News</a>
             <a href="events.html">Events</a>
-            <a href="discovery.html">Discovery</a>
-            <a href="resources_final.html">Resources</a>
+            <a href="discovery.html">Directory</a>
+            <a href="resources.html">Resources</a>
             <a href="contacts.html">Contact</a>
         </div>
         <div class="theme-change">
-            <button>
-                <img src="brightness-and-contrast.png" alt="">
-            </button>
+            <label for="theme-toggle" class="theme-toggle-label">
+                <img src="brightness-and-contrast.png" alt="Theme Toggle">
+            </label>
         </div>
     </header>
 
@@ -40,7 +42,7 @@
             </p>
             <div class="center-buttons">
                 <a href="events.html" class="btn btn-primary">Explore Events</a>
-                <a href="contact.html" class="btn btn-secondary">Learn More</a>
+                <a href="contacts.html" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
@@ -79,22 +81,22 @@
     <div class="stats">
         <div class="contents">
             <p style="color: #2bb7af; margin-bottom: 7px; font-size:x-large">250+</p>
-            <p style="opacity: 0.8; color: white;">Community Members</p>
+            <p style="opacity: 0.8; ">Community Members</p>
         </div>
 
         <div class="contents">
             <p style="color: #2bb7af; margin-bottom: 7px; font-size: x-large;">48</p>
-            <p style="opacity: 0.8; color: white;">Local Businesses</p>
+            <p style="opacity: 0.8; ">Local Businesses</p>
         </div>
 
         <div class="contents">
             <p style="color: #2bb7af; margin-bottom: 7px; font-size: x-large;">32</p>
-            <p style="opacity: 0.8; color: white;">Monthly Events</p>
+            <p style="opacity: 0.8; ">Monthly Events</p>
         </div>
 
         <div class="contents">
             <p style="color: #2bb7af; margin-bottom: 7px; font-size:x-large;">100%</p>
-            <p style="opacity: 0.8; color: white;">Community Love</p>
+            <p style="opacity: 0.8; ">Community Love</p>
         </div>
     </div>
 
@@ -107,7 +109,10 @@
                 <p>Be part of something special. Connect with your neighbors and help build a stronger, more vibrant community together.</p>
                 <br><br>
             </div>
-            <a class="get-started" href="home.html">Get Started</a>  
+            <div style="display: flex; justify-content: center;">
+
+                <a class="get-started" href="home.html">Get Started</a>  
+            </div>
         </div>
     </div>
 
