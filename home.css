@@ -270,7 +270,7 @@ footer {
     border-color: var(--accent-primary);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero-section {
         padding: 60px 20px;
     }
@@ -292,7 +292,7 @@ footer {
         width: 100%;
         max-width: 300px;
     }
-} */
+}
 
 .quick-access {
     background-color: var(--bg-primary);
@@ -359,7 +359,6 @@ footer {
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    /* width: 80%; */
     color: var(--text-primary);
 
 }

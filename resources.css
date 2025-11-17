@@ -121,8 +121,6 @@ body {
 }
 
 
-/* Categories Buttons - Tab System */
-/* Hide radio inputs */
 .tab-input {
     display: none;
 }
@@ -135,7 +133,8 @@ body {
     flex-wrap: wrap;
 }
 
-/* Tab button styling */
+
+
 .tab-button {
     background-color: var(--bg-secondary);
     border: none;
@@ -154,7 +153,8 @@ body {
     transform: translateY(-2px);
 }
 
-/* Active tab styling */
+
+
 #tab-emergency:checked ~ .categories label[for="tab-emergency"],
 #tab-education:checked ~ .categories label[for="tab-education"],
 #tab-health:checked ~ .categories label[for="tab-health"],
@@ -165,7 +165,8 @@ body {
     font-weight: 600;
 }
 
-/* Resource Cards */
+
+
 .resources {
     display: none !important;
     flex-direction: column;
@@ -175,7 +176,8 @@ body {
     padding: 0 20px;
 }
 
-/* Show content based on selected tab */
+
+
 #tab-emergency:checked ~ #content-emergency,
 #tab-education:checked ~ #content-education,
 #tab-health:checked ~ #content-health,
@@ -257,13 +259,13 @@ body {
     font-size: 0.95rem;
 }
 
-/* Links */
+
 a {
     color: var(--accent-secondary);
     text-decoration: none;
 }
 
-/* Contact Section */
+
 .contact {
     background-color: var(--bg-secondary);
     padding: 1.5rem;

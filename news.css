@@ -113,7 +113,7 @@ footer {
     font-size: 14px;
 }
 
-/* General Page Styles */
+
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -123,7 +123,6 @@ body {
 
 
 
-/* Page Header */
 .page-header {
     text-align: center;
     padding: 40px 20px 20px;
@@ -133,7 +132,8 @@ body {
     margin-bottom: 10px;
 }
 
-/* Featured Image */
+
+
 .featured-image {
     position: relative;
     margin: 20px auto;
@@ -160,7 +160,7 @@ body {
     margin: 5px 0;
 }
 
-/* Labels */
+
 .label {
     font-size: 12px;
     font-weight: bold;
@@ -173,7 +173,8 @@ body {
     background-color: #10b981;
 }
 
-/* green */
+
+
 .label.announcement {
     background-color: #10b981;
 }
@@ -182,19 +183,19 @@ body {
     background-color: #ef4444;
 }
 
-/* red */
+
+
 .label.community {
     background-color: #8b5cf6;
 }
 
-/* purple */
+
 .label.event {
     background-color: #f97316;
 }
 
-/* orange */
 
-/* News Cards */
+
 .news-cards {
     max-width: 700px;
     margin: 30px auto;
